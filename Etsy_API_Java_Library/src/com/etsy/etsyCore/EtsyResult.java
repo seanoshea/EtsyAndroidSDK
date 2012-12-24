@@ -59,7 +59,16 @@ public class EtsyResult {
 	public int getMaxCount() {
 		return maxCount;
 	}
-	
+
+    /**
+     * Setter for the results.
+     * 
+     * @param results the results to set.
+     */
+    public void setResults(List<BaseModel> results) {
+        this.results = results;
+    }
+
 	/**
 	 * Returns the List of parsed Etsy models.
 	 * @return A list of Etsy models parsed from the response or null if there was an error.
@@ -68,6 +77,15 @@ public class EtsyResult {
 		return results;
 	}
 	
+    /**
+     * Sets the HTTP response code.
+     * 
+     * @param code the HTTP response code.
+     */
+    public void setCode(int code) {
+        this.code = code;
+    }
+
 	/**
 	 * Returns the HTTP response code.
 	 * @return The HTTP response code.
